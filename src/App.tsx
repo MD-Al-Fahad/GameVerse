@@ -14,12 +14,12 @@ function App() {
         <Navbar/>
       </GridItem>
       {showAside && (
-        <GridItem area="aside" bg="gold">
+        <GridItem area="aside">
           Aside
         </GridItem>
       )}
 
-      <GridItem area="main" bg="dodgerblue">
+      <GridItem area="main">
         Main
       </GridItem>
     </Grid>
