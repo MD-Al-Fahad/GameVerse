@@ -1,73 +1,202 @@
-# React + TypeScript + Vite
+# 🎮 GameVerse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive video game discovery web application built with React, TypeScript, and Chakra UI. Browse thousands of games, filter by platform and genre, and discover your next favorite game!
 
-Currently, two official plugins are available:
+![GameVerse](https://img.shields.io/badge/React-18.x-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue)
+![Chakra UI](https://img.shields.io/badge/Chakra%20UI-2.x-teal)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## React Compiler
+- 🎯 **Browse Games**: Explore a vast collection of video games
+- 🔍 **Search Functionality**: Find games by name with real-time search
+- 🎨 **Dark Mode**: Toggle between light and dark themes
+- 📱 **Responsive Design**: Seamless experience across all devices
+- 🎮 **Platform Filtering**: Filter games by gaming platforms (PC, PlayStation, Xbox, etc.)
+- 🏷️ **Genre Categories**: Browse games by genre (Action, RPG, Strategy, etc.)
+- ⭐ **Critic Scores**: View Metacritic ratings for each game
+- 🔄 **Sort Options**: Sort games by relevance, rating, release date, and more
+- 😊 **Rating Emojis**: Visual rating indicators for quick game assessment
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Demo
 
-## Expanding the ESLint configuration
+[Live Demo](https://your-demo-link.com) *(Add your deployment link here)*
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📸 Screenshots
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+*(Add screenshots of your application here)*
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Technologies Used
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- **React 18** - UI library
+- **TypeScript** - Type-safe JavaScript
+- **Chakra UI** - Component library
+- **Axios** - HTTP client
+- **React Icons** - Icon library
+- **Vite** - Build tool and dev server
+- **RAWG API** - Game database API
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Node.js (v16 or higher)
+- npm or yarn package manager
+
+## 🔧 Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/gameverse.git
+   cd gameverse
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+   
+   Create a `.env` file in the root directory:
+   ```env
+   VITE_API_KEY=your_rawg_api_key_here
+   ```
+   
+   Get your free API key from [RAWG.io](https://rawg.io/apidocs)
+
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser**
+   
+   Navigate to `http://localhost:5173`
+
+## 📁 Project Structure
+
+```
+src/
+├── components/        # React components
+│   ├── ColorModeSwitch.tsx
+│   ├── CriticScore.tsx
+│   ├── Emoji.tsx
+│   ├── GameCard.tsx
+│   ├── GameGrid.tsx
+│   ├── GenreList.tsx
+│   ├── Navbar.tsx
+│   ├── PlatformSelector.tsx
+│   ├── SearchInput.tsx
+│   └── SortSelector.tsx
+├── hooks/            # Custom React hooks
+│   ├── useData.ts
+│   ├── useGames.ts
+│   ├── useGenres.ts
+│   └── usePlatforms.ts
+├── services/         # API services
+│   ├── api-client.ts
+│   └── image-url.ts
+├── data/            # Static data
+│   └── genres.ts
+├── App.tsx          # Main application component
+├── main.tsx         # Application entry point
+└── theme.ts         # Chakra UI theme configuration
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🎯 Key Components
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### GameGrid
+Displays games in a responsive grid layout with loading skeletons.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### GenreList
+Shows a list of game genres with images for filtering.
+
+### PlatformSelector
+Dropdown menu to filter games by gaming platform.
+
+### SearchInput
+Real-time search functionality for finding games by name.
+
+### SortSelector
+Allows sorting games by various criteria (rating, release date, etc.).
+
+## 🔌 API Integration
+
+This project uses the [RAWG Video Games Database API](https://rawg.io/apidocs) to fetch game data.
+
+Key endpoints used:
+- `/games` - Fetch games with filters and sorting
+- `/genres` - Get list of game genres
+- `/platforms/lists/parents` - Get gaming platforms
+
+## 🎨 Theming
+
+The application uses Chakra UI's theming system with custom color palette:
+
+- Custom gray scale for dark mode optimization
+- Dark mode as default
+- Responsive breakpoints for mobile, tablet, and desktop
+
+## 🚀 Build for Production
+
+```bash
+npm run build
 ```
+
+The build artifacts will be stored in the `dist/` directory.
+
+## 📦 Deployment
+
+You can deploy this application to various platforms:
+
+### Vercel
+```bash
+npm install -g vercel
+vercel
+```
+
+### Netlify
+```bash
+npm run build
+# Drag and drop the dist folder to Netlify
+```
+
+### GitHub Pages
+```bash
+npm run build
+# Deploy the dist folder
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👨‍💻 Author
+
+**Your Name**
+- GitHub: [@yourusername](https://github.com/yourusername)
+- LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
+
+## 🙏 Acknowledgments
+
+- [RAWG.io](https://rawg.io/) for providing the game database API
+- [Chakra UI](https://chakra-ui.com/) for the component library
+- [React Icons](https://react-icons.github.io/react-icons/) for the icon library
+
+## 📧 Contact
+
+For questions or feedback, please reach out to [your.email@example.com](mailto:your.email@example.com)
+
+---
+
+Made with ❤️ and React
