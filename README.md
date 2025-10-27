@@ -24,7 +24,9 @@ A modern, responsive video game discovery web application built with React, Type
 
 ## 📸 Screenshots
 
-*(Add screenshots of your application here)*
+![GameVerse Screenshot](https://raw.githubusercontent.com/MD-Al-Fahad/GameVerse/main/screenshots/gameverse-preview.png)
+
+*Browse through thousands of games with beautiful card layouts and real-time filtering*
 
 ## 🛠️ Technologies Used
 
@@ -46,8 +48,8 @@ Before you begin, ensure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/gameverse.git
-   cd gameverse
+   git clone https://github.com/MD-Al-Fahad/GameVerse.git
+   cd GameVerse
    ```
 
 2. **Install dependencies**
@@ -183,9 +185,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
+**MD Al Fahad**
+- GitHub: [@MD-Al-Fahad](https://github.com/MD-Al-Fahad)
 
 ## 🙏 Acknowledgments
 
@@ -195,7 +196,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-For questions or feedback, please reach out to [your.email@example.com](mailto:your.email@example.com)
+For questions or feedback, please reach out via GitHub issues.
 
 ---
 
