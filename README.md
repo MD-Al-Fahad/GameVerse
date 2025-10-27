@@ -24,7 +24,7 @@ A modern, responsive video game discovery web application built with React, Type
 
 ## 📸 Screenshots
 
-![GameVerse Screenshot](https://raw.githubusercontent.com/MD-Al-Fahad/GameVerse/main/screenshots/gameverse-preview.png)
+https://drive.google.com/file/d/1su2doQOq04Two4IAvk6tjs-lXYkpqlrz/view?usp=sharing
 
 *Browse through thousands of games with beautiful card layouts and real-time filtering*
 
