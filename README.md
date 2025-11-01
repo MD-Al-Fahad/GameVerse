@@ -20,7 +20,7 @@ A modern, responsive video game discovery web application built with React, Type
 
 ## 🚀 Demo
 
-[Live Demo](https://your-demo-link.com) *(Add your deployment link here)*
+[Live Demo](https://gameverse-hub.vercel.app/) 
 
 ## 📸 Screenshots
 
